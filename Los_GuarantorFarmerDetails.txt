@@ -1,0 +1,103 @@
+Exec sp_addextendedproperty 
+@name= N'Table_Msg' ,@value=N'Table keeps the Record of Guarantor Farmer Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Primary Key for Guarantor Farmer Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'pk_id'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Company Id',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'CompanyId'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'---',  --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'CoApplicant'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Guarantor Id',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'GuarantorID'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Ownership of the AgriLand',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'OwnAgriLand'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Land Holding Documents',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'LandHoldingDoc'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Current Status of Application',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'CurrStatus'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Type of Activity by Guarantor Farmer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'FarmG_TypeOfActivity'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'---',  --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'FarmG_PlsSpecify'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Agri Income Per Month',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'FarmG_AgriIncomePerMonth'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Other Source of Income for Guarantor Farmer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'FarmG_IncomeOthrSource'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Specify Sorce of Income for Guarantor Farmer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'FarmG_SpecifySrcOfIncome'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Total Income Per Month for Guarantor Farmer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_GuarantorFarmerDetails',
+@level2type=N'COLUMN',@level2name=N'FarmG_TotIncomePerMonth'
+GO

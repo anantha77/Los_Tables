@@ -1,0 +1,63 @@
+-- Los_SancAddtionInfoDetailsPawnBroker
+
+Exec sp_addextendedproperty
+@name=N'Table_Msg',@value=N'Table Keeps the record about Additional Sanction Details of Pawn Broker',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Primary Key for Additional Sanction Details of Pawn Broker',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'pk_id'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'SancNo',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'Sanction Number'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'License Number Pawn Product',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'LicenseNumber'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'License Holder Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'LicenseName'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Date of Validity',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'ValidityDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Address of Pawn Broker',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'PawnbrokerAddress'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'CrtdDt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoDetailsPawnBroker',
+@level2type=N'COLUMN',@level2name=N'crtdBy'
+GO

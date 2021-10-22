@@ -1,0 +1,106 @@
+--Los_SancCustMobileVerification
+
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the Record of Customer Mobile Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Sanction Customer Mobile Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mobile Number of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'MobileNumber'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'GUID'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'OTP',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'Otp'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'MobType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Application',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'VerifyFlag'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'Crtdt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Email-Id of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'Email_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Email Acceptance of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'EMailAccept'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Email Sent Date by Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'EMailSentdt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Email Accepted Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'EMailAcceptdt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Email Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'EMailVerify'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'sancno'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Company Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancCustMobileVerification',
+@level2type=N'COLUMN',@level2name=N'Company'
+GO

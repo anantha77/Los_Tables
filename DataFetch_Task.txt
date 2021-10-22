@@ -1,0 +1,517 @@
+--Los_AgentBankDetailsHistory
+
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Tables keeps the Record of Agent Bank Details History ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Agent Bank Details History ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Code for Agent ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntCode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Agent Bank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntBankName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Branch of Agent Bank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'   AgntBankBranch'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'IFSCcode of an Bank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntIFSCcode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Account number of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntAccNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'verify the Account number of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntReEntAccNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Account for Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntAccName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Account for Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntAccType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Proof Provided by Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntBankAccProof'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'OrderNo of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntOrderNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'SignatoryType of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntSignatorytype'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'AccountHeld for Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntAccountHeld'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Agent Account',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'AgntAccVerify'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Account Created Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Account Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Modified Information by Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'Lstmodby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'Lstmoddt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Information about Agent Verified By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'Apprvdby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Information about Agent Verified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentBankDetailsHistory',
+@level2type=N'COLUMN',@level2name=N'Apprvddt'
+GO
+---------------------------------------------------------------------------------------------
+--Los_AgentCodeGen
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Tables keeps the Record of Agent Code Generation ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentCodeGen'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Agent Code Generation',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentCodeGen',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Referred Columns',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentCodeGen',
+@level2type=N'COLUMN',@level2name=N'topic'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Unit',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentCodeGen',
+@level2type=N'COLUMN',@level2name=N'Unit'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Category of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentCodeGen',
+@level2type=N'COLUMN',@level2name=N'Category'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sequence Number of Agent Category',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentCodeGen',
+@level2type=N'COLUMN',@level2name=N'SeqNumber'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Applied Status',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentCodeGen',
+@level2type=N'COLUMN',@level2name=N'ApplyStatus'
+GO
+----------------------------------------------------------------------------------------
+--Los_AgentDetails
+
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Tables keeps the Record of Agent Code Generation ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Agent Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Code of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntCode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Category of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntCategory'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Agent Title ShortDecscription',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntTitleShrtdescr'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Agent Mobile Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntMobileNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'PAN Number of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntPAN'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'House Number of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntHno'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Street Name of agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntStreet'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Locality of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntLocality'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Pincode for Agent Location',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntPincode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'City Name of the Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntCity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Taluk of the Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntTaluk'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'State of the Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntState'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Country of the Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntCountry'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Lankmark1 of the Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntLandmark1'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Landmark2 of the Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntLandmark2'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of PAN verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntPanVerified'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Verified PAN detailsOn',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntPanVerifiedDT'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---------',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgntSubAgntReq'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Entities of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Entity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Channel Name of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Channel'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Designation of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Category'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Role of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'SubCategory'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Constitution'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'LLP'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'CIN'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'DOI'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'UDHAYAM'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AgDate'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Expires date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Validity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Process created by',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Process created date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Information modified by',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Lstmodby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Information modified date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Lstmoddt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Information Approved by',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Apprvdby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Information Approved date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Apprvdbdt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Application',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'Status'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---------',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AddtnlInfoPanNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---------',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AddtnlInfoPanVerifiedDT'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Alternate Mobile Number for communication',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AlternateMobileNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'AadharNumber of Agent',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'AadharNumber'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'ParentUnit'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_AgentDetails',
+@level2type=N'COLUMN',@level2name=N'ReferenceCode'
+GO
+-------------------------------------------------------------------------------
+

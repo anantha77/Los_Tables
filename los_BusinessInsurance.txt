@@ -1,0 +1,96 @@
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the record about Business Insurance',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Business Insurance',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Company for Insurance of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'InsuranceCompName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Cover Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'PolicyCoverType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Number for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'PolicyNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Insured Amount By Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'InsuredAmount'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Premium Amount for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'PremiumAmount'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Issue Occurred Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'PolicyIssueDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Start Date for Product',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'PolicyStartDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Expiry Date for Product',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'PolicyExpiryDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Remarks for Product By Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'Remarks'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Order Number Of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'OrderNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of the Process',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessInsurance',
+@level2type=N'COLUMN',@level2name=N'StatFlag'
+GO

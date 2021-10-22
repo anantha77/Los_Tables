@@ -1,0 +1,84 @@
+--LOS_SancInfoMob_d
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the Record of Sanction Information of Mobile Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Sanction Information of Mobile Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'PK_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Alternate Mobile Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'AltMobileNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'RelationShip',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'RelationShip'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'Lstmodby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'Lstmoddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'Apprvby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'Apprvddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mobile Card Number Count',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancInfoMob_d',
+@level2type=N'COLUMN',@level2name=N'MobCardNo'
+GO

@@ -1,0 +1,407 @@
+-- Los_SancBusinessDetails
+
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the Record of Business Details of Sanction',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Sanction Business Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Company Id',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'Companyid'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Industry',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'Industry'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Nature of Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'Natureofbusiness'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Activity',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TypeofActivity'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Start Date of Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusinessStartDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Years in Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'NoOfYearinBusiness'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Registration Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'RegistrationNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TINNumber'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'VATNumber'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'IncorporationDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'DateofCommencment'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Turn Over of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TurnOver'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'Income'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Order Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'OrderNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business House Number of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiHno'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Street Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiStreet'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Locality Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiLocality'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Pincode of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiPincode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business City Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiCity'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Taluk of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiTaluk'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business State of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiState'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Country Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiCountry'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Landmark of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusiLandmark1'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Distance From Branch for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'DistanceFromBranch'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'DistanceFromCollArea'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Organisation',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'OrganisationName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Shop OwnerShip of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'ShopOwnership'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Shop Location ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'ShopLocation'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Shop Locality ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'ShopLocality'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TypeOfStructure'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TypeOfWalls'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TypeOfRoof'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Starting Time of Shop',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'ShopStartTime'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Profession',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'Professiontype'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Descripton of Profession',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'ProfessionDesc'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Previous Occupation Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'PreviousOccupation'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'SupportStaffDetails'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'SupportStaffType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'EstGoodValue'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Total Salary of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TotalSalary'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Total Number of Value of Goods ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'TotalValueofGoods'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'StaffTenure'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'SupportSelf'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'SupportFamily'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Estimated Value',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'EstValue'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Salary for Staff',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'StaffSalary'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Shop End Time',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'ShopEndTime'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Years in Address',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'NoOfYearsAddress'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Years in Current Profession',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'CurrentProfessionYrs'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'Natureofbusinessothers'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Company',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'CompanyType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Invesment In Equipments',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'InvmntInEquipments'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Premises Ownership',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'PremisesOwnershipStatus'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Premises',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'PremisesType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancBusinessDetails',
+@level2type=N'COLUMN',@level2name=N'BusinessRegistered'
+GO

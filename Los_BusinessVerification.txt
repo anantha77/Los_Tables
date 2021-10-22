@@ -1,0 +1,716 @@
+
+Los_BusinessVerification
+
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Tables keeps the Record of Business Verification of Customer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Business Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Company Id',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'Companyid'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business House Number of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Hno'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Street Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_StreetName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Area Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Area'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business City Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_City'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business District name of Customer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_District'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business State of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_State'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Country of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Country'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Pincode of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Pincode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Landmark of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Landmark'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Address Confirmation of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_AddressConfirmed'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Changes in Business Address of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Changeinaddress'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Businesss Employment Details ofCustomer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_EmploymentDetails'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Customer Category',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_CustomerCategory'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Designation of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Designation'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Employment Status  of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_EmploymentStatus'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Employment Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_EmploymentType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Business Person met a  Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_PersonMet'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Designation of Business Person met a Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_DesgofPersonmet'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Year of Experience for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_YearofExperience'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Monthly Salary of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_MonthlySalary'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Transfer Applicable for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Transferapplicable'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Government Organization of customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Govtorganization'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Applicant availability for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Applicantavailabilty'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Affordable Customer EMI',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_CustomerAffordableEmi'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Neighbour Confirmation of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Neighbourconfirmation'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Neighbour feedback about Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Neighbourfeedback'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Business of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TypeofBuiness'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business GST of a Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_GST'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Other Tax Receipt of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OtherTaxReceipt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----------',  --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_RC'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'-----------',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_ITReturn'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Job in Business for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TypeofJob'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Office ID of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OfficeID'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Bank Statement for salary Credit of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_BankStatemntforsalarycredit'
+GO	
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Self Declaration of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Selfdeclaration'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Place of work of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Placeofwork'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Payslip form of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Payslipform16'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Income Proof of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_IncomeProof'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Monthly Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Monthlyincome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Total Monthly Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Totalmonthincome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Other Financial Commitment for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OtherFinancialcommitment'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Monthly  Commitment for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TotalMonthlyCommitment'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business OtherSource Of Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Othersourceincome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Family Monthly Expenses of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_familymonthlyExpenses'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Other Expenses of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OtherExpensesifany'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_totalfreecashflow'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_VerifyResult'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Remarks of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Remarks'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Visit Date and Time of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_VisitDatetime'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of  Customer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'Status'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Distance from Branch for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_DistanceFromBranch'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_DistanceFromCollArea'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Foreign Key for Business Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_FI_FK'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Employee Comapany Name ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_EmpCompanyName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Years in  Business of Customer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_NoofyearsinBusiness'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Verify Result Rule of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_VerifyResultRule'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Sector of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Sector'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_BusinessType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'------',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OfficeSpace'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Office Locality of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OfficeLocality'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business oOffice Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OfficeType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Name Board Notice of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_BusinessNameBoardNoticed'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Department of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Department'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Employee Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_EmployerName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Employee Code of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_EmployeeCode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Other Department of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OtherDepartment'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Retirement age of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_RetirementAge'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Deductions in salary per Month of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_DeducationsinSalarypermonth'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Net Salary per Month of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_NetSalaryPerMonth'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Specify the Source of Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_SpecifySourceOfIncome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Business of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Nameofbusiness'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Business Person met a  Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_NameOfThePersonMet'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Employees Working in a  Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_NoOfEmployeesWorking'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Turn over per Month of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TurnOverPerMonth'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Income pre Month of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_BusinessIncomepermonth'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Years in current Profession of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_NoofyrsincurrntProfession'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Income per Month from Business Profession of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_IncomePerMonthFromProfession'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Income Per Annum of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_BusinessIncomeperAnnum'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Total Income per Annum of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Totalincomeperannum'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Other source of Business Income for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Othersourceincomeperannum'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Nature of Business of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Natureofbusiness'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Specifies the others Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OthersPleaseSpecifybusiness'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Activity of Customer',	
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TypeofActivity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Others Type of Business Activity',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_othersTypeofActivity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Type of Industry of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TypeOFIndustry'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Type of Activity in Industry of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TypeofActivityinIndustry'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Start Year of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_BusinessStartYear'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_ConstructionoftheOffice'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OthersPleaseSpecify'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Employee Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_EmployerType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Years in Current Employment of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Noofyrsincurrntemploymnt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Specifies the Others  Business Designation',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_OthersdesgPleaseSpecify'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Type of Others of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_BusinessTypeothers'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Person Employment Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_persEmploymentType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Gross salary per Month of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_GrossSalaryPerMonth'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Turn over per Annum of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_TurnOverPerAnnum'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Latitude of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Latitude'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Longitude of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessVerification',
+@level2type=N'COLUMN',@level2name=N'B_Longitude'
+GO

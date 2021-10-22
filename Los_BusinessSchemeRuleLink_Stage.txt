@@ -1,0 +1,97 @@
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the record of Business Scheme Rule Link Stage',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Business Scheme Rule Link Stage',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'PK_Id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Business Scheme of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'BusinessScheme'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'State of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'State'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sub Product of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'SubProduct'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Linked Flag of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'LinkedFlag'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Created Date of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'CrtdDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Created By of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'CrtdBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Last Modified Date of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'LstModDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Last Modified By ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'LstModBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved Date of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'ApprovedDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved By ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'ApprovedBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Revised Date of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'RevisedDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Revised By ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BusinessSchemeRuleLink_Stage',
+@level2type=N'COLUMN',@level2name=N'RevisedBy'
+GO
+

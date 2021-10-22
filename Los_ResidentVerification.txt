@@ -1,0 +1,512 @@
+EXEC sys.sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Tables keeps the Record of Resident Verification of Customer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Resident  Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Company Id',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'Companyid'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Type'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident House Number of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Hno'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Street Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_StreetName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Area Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Area'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident City Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_City'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident District name of Customer ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_District'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident State of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_State'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Country of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Country'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Pincode of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Pincode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Landmark of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Landmark'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Address Confirmation of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_AddressConfirmed'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Ownership Status of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Residentownershipstatus'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Electricity Bill Number of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Electricitybillno'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Residenttype'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Locality of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_ResidentLocality'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Accessibility of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_ResidentAccessibility'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Type of House of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_TypeofHouse'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Distance from Branch of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_DistancefromBranchKM'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Customer Availability',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Customeravailabilty'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Customer Cooperation',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Customercooperation'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Educational Qualification of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_EducationalQualification'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Number of Dependents Adults ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_NoOfDependentsAdults'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Number of Dependents Children',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_NoOfDependentschildren'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Rent per Month of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_RentPermonth'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident other Commitments',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_OtherCommitments'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Net Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Netincome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Other Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Otherincome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Marrital Status of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Maritalstatus'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Spouse Working ', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Spouseworking'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Spouse Monthly Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Spousemonthlyincome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident ID Proof Verification of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_IDProofVerified'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Address Proof Verification of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_AddressProofVerified'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident  Name of the Contacted Person of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_contactedPersonName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Relationship with Applicant ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Relationshipwithapplicant'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Neighbour Reference of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_neighbourreference'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_visiblePoliticalaffliation'--E
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Asset of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_AssetSeen'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Verify Result of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_VerifyResult'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Visit Date and Time of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_VisitDateTime'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Remarks of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Remarks'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_EditFlag'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Validates a Resident Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'Status'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Surplus'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Loaction of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_ResidentLocation'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Built up Area of House',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_BuiltUpAreaOfHouse'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_DistanceFromCollArea'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Asseet Two Wheeler of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_AsstTw'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Asset Car of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_AsstCar'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Foreign Key for Resident Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_FK_ID'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Verify Result Rule of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_VerifyResultRule'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Employment Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_EmploymentType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Designation of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Designation'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Organisation Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_OrganisationName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Years in Current Employment of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_NoOfYrsInCurrentEmployment'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident specify the Source of Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_SpecifySourceOfIncome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Toatal Income per Month',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_TotalIncomePerMonth'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_OthersPleaseSpecify'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Education Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_EducationType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Source of Income of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_SourceOfIncome'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Number of Years in Current Business ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_NoOfYrsInCurrentBusiness'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Business Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_BusinessType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Nature of Business of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_NatureofBusiness'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Nature of Activity of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_NatureofActivity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_IncomeIfAny'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_SpecifySourceOfIncomeHo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_OtherinSpecified'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Other Activity of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_OtherActivity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Latitude of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Latitude'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Resident Longitude of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_ResidentVerification',
+@level2type=N'COLUMN',@level2name=N'R_Longitude'
+GO
+
+
+

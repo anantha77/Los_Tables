@@ -1,0 +1,637 @@
+
+Los_GuarantorInfo
+
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Tables keeps the Record of Guarantor Information',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key Guarantor information',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Company Code',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CompanyCode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Reference number of a Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CustRefno'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Reference Type of a Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Reftype'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Unit',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Unit'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Folio',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Folio'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Aadhaar Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'AadhaarNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Entity',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Entity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'ID Proof',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'IdProof'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Title Short Description',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'TitleShrtdescr'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Name'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Gender of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Gender'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date of Birth of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'DOB'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Religion of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Religion'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Father Name of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'FatherName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mother Name of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'MotherName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mobile Number of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'MobileNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Landline Number of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'LandLineNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Standard Code',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'StdCode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Email ID of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Email'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'PAN Number of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PAN'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Address Proof of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'AddProof'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current House Number of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrHno'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current Street of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrStreet'
+GO
+
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current Locality of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrLocality'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current Pincode of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrPincode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current City of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrCity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current Taluk of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrTaluk'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current State of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrState'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current Country of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrCountry'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current Landmark1 of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrLandmark1'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Current Landmark2 of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrLandmark2'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'AccomdationType of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'AccomdationType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'ReesidingYr of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'ReesidingYr'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Confirms the Address of the Customer either Permanent or Residence',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CorrPerAddressSame'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Address Proof of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerAddProof'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent House Number of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerHno'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Street of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerStreet'
+GO
+
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Locality of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerLocality'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Pincode of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerPincode'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent City of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerCity'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Taluk of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerTaluk'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent State of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerState'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Country of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerCountry'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Landmark1 of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerLandmark1'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Permanent Landmark2 of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PerLandmark2'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Age of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Age'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Application',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CurrStatus'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created by',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Lastly Modified By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Lstmodby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Lastly Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Lstmoddt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Apprvdby'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Apprvddt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'CoApplicant',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'CoApplicant'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor ID',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GuarantorID'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'-----', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'RegOthrs'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Education',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GUCOEducation'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Marrital Status',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GUCOMaritialstatus'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'------', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GUCONoofDependentAdult'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'------',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GUCONoofDependentChild'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'------', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'DeDupeCmpltdDT'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of PAN Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PanVerified'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Aadhaar Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'AadhaarVerified'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Aadhaar Verified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'AadhaarVerifiedDT'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'PAN Verified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'PanVerifiedDT'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Driving License Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_DrvngLicenseNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Ration Card Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_RationCardNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Guarantor Passport Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_PassportNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor VoterCard Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_VoterCardNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor LPG Consumer Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_LPGConsumerNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Electric Bill Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_ElectricBillNo'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Relationship with Applicant',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'RltnspwithAppl'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Occupation',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'OccupationType'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'----',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'AutoGurDedRBI'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Remarks of Dedupe',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'DedupeRemarks'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Result of Dedupe',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'DedupeResult'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'fatherhusbandOpt'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Caste',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Caste'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Provides Information of Applicant Whether Differently Abled Person or Not',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'Differentlyabled'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the MotherMaiden',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'MotherMaidenName'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Count of Guarantor Bank Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GuBnkDetCount'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mobile Verify Flag',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'mobileverifyflag'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GuGeotagging'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Selects the Category of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'GuarCategory'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_FolioChange'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_FolioApproved'
+GO
+
+EXEC sys.sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'---',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_GuarantorInfo',
+@level2type=N'COLUMN',@level2name=N'G_NameChngApproved'
+GO
+
+
+

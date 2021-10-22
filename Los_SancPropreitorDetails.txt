@@ -1,0 +1,259 @@
+-- LOS_SancProprietorDetails
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the Record about Propreitor Details of Sanction ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Sanction Proprietor Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'PK_Id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Proprietor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'Name'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'DesignationoftheSignatory'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'PAN Number of Proprietor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'PAN'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of PAN Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'PANverifyflag'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Email Id of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'Email'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mobile Number of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'MobileNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Phone Number of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'PhoneNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Fax Number of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'FaxNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Net Worth of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'NetWorth'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Annual Income of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'AnnualIncome'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'House Name/Number of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N''
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Street Name of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'StreetName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Locality Name of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'Locality'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'City Name of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'City'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Taluk Name of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'TalukDistrict'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Pin Number of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'PinCode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'State of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'State'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Country  of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'Country'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Landmark1 of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'Landmark1'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_Type'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Gender  of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_Gender'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date of Birth  of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_DOB'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Age of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_Age'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name  of Propreitor as Per PAN',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_NameAsPerPAN'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Cibil Score of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_CibilScore'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Order Number of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'OrderNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Application of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'statflg'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created Date of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'CrtdDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created By ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'CrtdBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'LstModDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'LstModBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Business for Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_BusinessCount'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Pan Number Verification of Propreitor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_PanVerified'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Pan Number  of Propreitor Verified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancProprietorDetails',
+@level2type=N'COLUMN',@level2name=N'P_PanVerifiedDT'
+GO

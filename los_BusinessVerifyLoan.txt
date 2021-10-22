@@ -1,0 +1,119 @@
+
+
+EXEC sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the Record of Business Verify loan of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Business Verify Loan',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'pk_id'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'SancNo',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'Sanction Number'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Bank of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'NameOfBank'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Branch Name of the Bank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'BankBranch'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Applicable Business Amount for Customer  ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'Amount'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date and Month of Borrowing a Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'BorrowingMonthDate'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Rate of Interest for Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'RateOfInterest'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Tenure for Loan ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'Tenure'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Installment Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'InstallmentAmount'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'Arrears'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last modification By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'LstModby'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last modification Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'LstModDt'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'Financier'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'OrderNo'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Purpose for Loan',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'Purpose'
+GO
+
+EXEC sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'los_BusinessVerifyLoan',
+@level2type=N'COLUMN',@level2name=N'Frequency'
+GO

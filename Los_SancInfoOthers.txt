@@ -1,0 +1,120 @@
+-- LOS_SancInfoOther
+
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the Record about Other Sanction Information',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Sanction Language',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'RegOthrs'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'MarginReceipt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'CreditStatus'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'CreditRemarks'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Invoice Print Count',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'InvoicePrintcnt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'First Loan Due Pay',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'LoanDuepay'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'RepayBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Interest Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'InterestAmount'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'RateOnExpiry'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Advance Interest Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'AdvanceInterest'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Minimum Interest Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'MinimumInterest'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'AddedSubHNI'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'DisCardedSubHNI'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancInfoOther',
+@level2type=N'COLUMN',@level2name=N'FirstHNI'
+GO

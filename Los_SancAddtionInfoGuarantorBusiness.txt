@@ -1,0 +1,260 @@
+--Los_SancAddtionInfoGuarantorBusiness
+
+
+Exec sp_addextendedproperty
+@name=N'Table_Msg',@value=N'Table Keeps the record about Additional Sanction Information of Guarantor Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Primary Key for Additional Sanction Information of Guarantor Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Company Id',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'Companyid'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'CoApplicant'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Guarantor ID',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'GuarantorID'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Industry Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'Industry'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nature of Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'Natureofbusiness'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Type of Activity',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'TypeofActivity'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business Start Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusinessStartDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Number of Years in Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'NoOfYearinBusiness'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Registration Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'RegistrationNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'TINNumber'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'VATNumber'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Incorporation Date',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'IncorporationDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Date of Commencement',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'DateofCommencment'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Turn Over of Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'TurnOver'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Income of Guarantor in Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'Income'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Order Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'OrderNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business City  Name of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiCity'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business Country Name of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiCountry'	
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business House Name of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiHno'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business Landmark of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiLandmark1'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business Locality of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiLocality'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business Pincode ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiPincode'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business State of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiState'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business Street  Name of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiStreet'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Business Taluk Name of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'BusiTaluk'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Current Status of Application',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'CurrStatus'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Name of Business',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'Nameofbusiness'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'AccomdationTypeguarntor'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Mobile Number of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'MobileNoguarantor'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Company Type',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'CompanyType'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Investment in Equipments',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'InvmntInEquipments'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Status of Guarantor Premises Ownership',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'G_PremisesOwnershipStatus'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Premises Type of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'G_PremisesType'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAddtionInfoGuarantorBusiness',
+@level2type=N'COLUMN',@level2name=N'G_BusinessRegistered'
+GO

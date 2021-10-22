@@ -1,0 +1,196 @@
+Los_bnkDetailsGuarantor
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the record about Guarantor Bank Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Bank Details of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Bank for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'BankName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Bank Branch for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'BankBranch'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'IFSC Code for Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'IFSCcode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Account Number of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'AccNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'ReEnter the Account Number of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'ReEntAccNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Account Name of the Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'AccName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Account Type of Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'AccType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'VPACode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'AccFor'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Bank Account Proof Provided by Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'BankAccProof'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Created Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Created Date for Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modification Done by',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'Lstmodby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modification Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'Lstmoddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'Apprvdby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'Apprvddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Foreign Key for Guarantor Bank Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'Guarantor_fk'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Order Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'OrderNO'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Signatory Type for Guarantor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'Signatorytype'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'AccountHeld'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'GuarPayLocationPK'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor account Operative',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'G_AccOperativeSince'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Banking Transcation',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'G_BankingTransctn'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Average  Bank Balance',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'G_AverageBankBal'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor Inward count Cheque',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_bnkDetailsGuarantor',
+@level2type=N'COLUMN',@level2name=N'G_InwardChqueBounce'
+GO

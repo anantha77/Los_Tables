@@ -1,0 +1,218 @@
+Los_BankInfo
+
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the record of Bank Information of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Primary Key for Bank Information of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'pk_id'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Mode'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Type of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'CustomerType'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Name of the Bank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'BankName'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Branch Name of the Bank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'BankBranch'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Name of the Account Holder',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'AccHolderName'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N' Account Number of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'AccountNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'IFSC of the Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'IFSC'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Type of the Account',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'AccountType'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Created Date for Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Last Modification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Lstmodby'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Last Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Lstmoddt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Approves By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Apprvdby'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Approved Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Apprvddt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Sancno'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Date of the EMIStart',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'EMIStartDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Date of the EMIEnd',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'EMIEndDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Amount ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Amount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Code of the Sponsor Bank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'SponsorBankCode'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Code of the Utility',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'UtilityCode'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Reference Number of the Mandate',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'MandateRefNumber'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'MandateFor'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Amount of the Mandate',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'MandateAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Code of the ENACHBank',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'ENACHBankCode'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N' ',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'ModeOfReg'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N' ',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'Frequency'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'ENACH of the Register',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'RegisterENACH'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'PurposeOfReg'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Code of the Short',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_BankInfo',
+@level2type=N'COLUMN',@level2name=N'ShortCode'
+GO
