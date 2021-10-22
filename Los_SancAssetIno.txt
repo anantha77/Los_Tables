@@ -1,0 +1,646 @@
+-- Los_SancAssetIno
+
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the record about Asset Sanction',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Asset Sanction INO',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'VehicleType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Vehicle segment',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Segment'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Company Name of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Manufacturer'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Model Name of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Model'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Year of Manufacture',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'YearMfg'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Registration Number of Vehcile',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'RegNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Registration Number of Vehcile',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'RegNo1'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Engine Number of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'EngineNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Chasis Number of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'ChasisNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Veicle Dedupe Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'VehDedupe'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Purpose of Vehicle Used ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'VehUsedFor'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Insurance Policy of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'InsurancePolicy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'InsuranceImg'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Number of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'PolicyNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Expiry Date of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'PolicyExpDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Premium Amount of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'PremiumAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'IdvValue'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Insurance Company Name of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'InsCompany'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'InsTypeShrtDescr'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Dealer Code for Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'DlrShrtDescr'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Dealer Name for Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'DlrDescr'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'DlrSubAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'STXDlrSubAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'AddlDlrSubAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'STXAddlDlrSubAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Total Deduction Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'TotalDeduction'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'MfrSubAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'STXMfgDlrSubAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'RenewWith'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Premium Pay Mode of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'PremiumPayMode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'VehAttachedTo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Agricultural Proof Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'AgriCultureProof'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Total  Gross Gram of Jewel',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'TotalGrossGram'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Total Net Gram of Jewel',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'TotalNetGram'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Packet Number of Jewel',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'PacketNumber'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Apraiser Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Apraiser'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'TentPremiumAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Month of Manufacture',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'MonthMfg'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Tyres',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'TypeofTyre'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'NoofPairs'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Age of Asset',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'AgeOfAsset'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Purpose of Loan',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Loanpurpose'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Vehicle Category',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'VCategory'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Manager'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'SalesExecutive'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'AssetSerialNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'BuyerSellerAgrmttype'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of RC Owner',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'RCOwnerName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding House Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrHno'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding Street Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrStreet'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding Locality',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrLocality'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Coresponding Pincode',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrPincode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding City',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrCity'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding Taluk Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrTaluk'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding State Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrState'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding Country Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'CorrCountry'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Corresponding Landmark Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Landmark'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Condition of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Vehiclecondition'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Purchase Price',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Purchaseprice'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Expected Market Value',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Expectedmarketvalue'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Lender',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'LenderName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Remainingtenure'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Arrears'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'EMI Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'EMIAmt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date of Manufacture',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'ManufactureDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Loan Availed for Purchase',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'LoanAvailedforPurchase'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'MultipleFlag'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'SegmentAge'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'AstMdlCC'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Emission Type',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'EmissionType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Registration Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'REgDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Yard for Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'YardName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Vehicle Dedupe Verify ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'VehicleDedupeFlag'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Verification on Gate Pass',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'GatepassVerify'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of GatePass',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'Gatepass_status'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'LienMarkVerify'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'EquitblMortgageCnt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Year and Month of Manufacture',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'MFyearmonth'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Eligible Amount for Loan',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'EligibleAmount'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Provided Loan Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'LoanAmount
+'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Model Description of Product',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'ModelDescription'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'InvoiceNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'InvoiceDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Endorsement Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'EndorsementDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'PolicyStDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Battery',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'BatteryType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Enorsement Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'EndorsementNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Asset Category',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'AssetCategory'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Approver Market Rate ',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SancAssetIno',
+@level2type=N'COLUMN',@level2name=N'ApproverMarketRate'
+GO
