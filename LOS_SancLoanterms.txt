@@ -1,0 +1,883 @@
+--LOS_SancLoanterms
+
+
+Exec sp_addextendedproperty
+@name=N'Table_Msg',@value=N'Table Keeps the record about Sanction Charges',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Primary Key for Sanction Charges',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Estimated Asset Cost',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'EstAsstCost'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Dealer Margin Money',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'DlrMrgnMny'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Body Builder Margin Money',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'BodyBuilderMrgnMny'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Proposal Loan Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Prploanamt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Loan Tenure',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LoanTenure'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'First Due Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LoanDueday'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Service Charge',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Servchrg'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Documentation Charge',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Docchrg'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Life Protector Coverage Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LifeProCvrAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Life Proctector Premium',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LifeProPrem'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'FranPartcAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'AddPartcAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'FranPartcWaiver'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Reason for Waiver',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ReasonForWaiver'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'EMI Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'EmiAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'LTV',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LTV'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Preclosure Charges',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PreClosureCharges'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Branch Head Note',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'BranchHeadNote'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Preferred Type of Payment',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PreferredPaymentType'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Margin Money',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'MarginMoney'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Name of Nominee',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeName'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Age of Noominee',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeAge'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Relationhip of Nominee',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeRelnshp'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Waiver Applicable',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'WaiverAppl'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Pattern of EMI',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'EmiPattern'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Expected Loan Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ExpectedLoanDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'First Due Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'FirstDueDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Repayment Model',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'RepaymentMdl'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'EMI Payed in Advance',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'AdvanceEmi'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Company Interest Rate',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'CompanyIRR'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Revised Interest Rate',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'RevisedIRR'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'CSC Note',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'CSCNote'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'CreditExecutive'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ParticipateWaiver'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ParticipationAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Number of Pairs',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NofPairs'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Interest Rate',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'IRRRate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Method of Interest',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'InterstMethod'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Gross Asset Cost',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'GrossAsstCost'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Amount of Discount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Discount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Cost of Chasis',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ChasisCost'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Dealer Margin Money Model',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'DealerMarginMoneyModel'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Body Builder Margin Model',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'BodyBuilderMMModel'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Premium Model',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PremiumModel'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Body Build Cost',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'BodyBuildCost'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Frequency',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Frequency'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Service Tax',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ServTax'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Other Chrages',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'OtherChrg'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Price of Exshowroom',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ExshowroomPrice'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'RTO',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'RTO'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Insurance',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Insurance'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'DUE'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'UpFrontInt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Dpi'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'CABranchHeadNote'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'InvoiceValue'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'UPRate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Sanction Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'SancAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Date of Expiry',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ExpiryDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Insurance Company Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'InsuranceCompany'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Insurance Preimium Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'InsurancePremiumAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Start Date of Policy',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PolicyStartDt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Expiry Date of Policy',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PolicyexpirytDt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Insurance Policy Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'InsurancePolicyNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Name of Waiver',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Waiver'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'MethodOfStax'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Expected Loan Day',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ExpectedLoanDay'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'DueDatePattern'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Others'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Free Insurance',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'FreeInsurance'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'FinCharges'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Calculated EMI',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'CalculatedEmi'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Collected Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'CollectedAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Life Insurance Option',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LIOpt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LifePrevPrem'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Number of Installment',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Noofinstallment'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PPRAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'EffRateAfterPPR'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Holidays',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Holidays'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Number of Days',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Noofdays'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Purpose of Loan',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LoanPurpose'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee House Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeHno'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee Street Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeStreet'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee Locality',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeLocality'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee Pincode',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineePin'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee City Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeCity'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee Taluk Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeTaluk'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee State Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeState'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee Country Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeCountry'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Nominee Landmark',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeLandmark'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Date of Birth of Nominee',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'NomineeDOB'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Values Based on Scheme',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'SchemeBasedValue'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Market Value',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'MarketValue'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Status  of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'CustStatus'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Validity Period',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ValidityPeriod'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Validity Expiry Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ValidityExpiryDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Deviation Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'DeviationAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Deviation Remarks',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'DeviationRemarks'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Maturity Period of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'VehicleMaturityPeriod'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Sanction Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'SanctionAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'EffStDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'EffEndDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'DueDate'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PrincipleRecMd'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Maximum EMI Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'MaxEmiAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Agmtvalue'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'FaciltyAvilableAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'BidderAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Monthly Interest',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'MonthlyInterest'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'GINS_PremiumAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LockInPeriod'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ArrearMonth'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ArrearAmount'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'ArrearLnno'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'Utilised'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'SanctionInPipeline'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'SanctionLimit'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LINS_PremiumAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'LINS_CoverageAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'PawnPrintCnt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'slicMemPolicyNo'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'slicMemPolicyErrMsg'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_SancLoanterms',
+@level2type=N'COLUMN',@level2name=N'MrtyCalDate'
+GO

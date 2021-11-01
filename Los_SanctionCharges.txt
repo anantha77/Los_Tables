@@ -1,0 +1,97 @@
+--Los_SanctionCharges
+Exec sp_addextendedproperty
+@name=N'Table_Msg',@value=N'Table Keeps the record about Sanction Charges',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Primary Key for Sanction Charges',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'Sancno'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Type of Charges',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'CharegeType'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Amount of Charge',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'ChargeAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'GST Type',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'GSTType'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Notifies Whether to show GST',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'GSTShow'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'GST Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'GstAmt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Status of Application',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'StatFlg'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'CrtdDt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'CrtdBy'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'ModDt'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Application Modification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'ModBy'
+GO
+
+Exec sp_addextendedproperty
+@name=N'Column_Msg',@value=N'Actual Charges',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_SanctionCharges',
+@level2type=N'COLUMN',@level2name=N'ActualCharges'
+GO

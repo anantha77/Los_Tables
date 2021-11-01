@@ -1,0 +1,366 @@
+-- Los_VehicleInspection
+
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the record of Vehicle Inspection',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Vehicle Inspection',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'NameOfPresent'
+GO
+
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mobile Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'MobileNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Place of Inspection',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'PlaceofInspec'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Address',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Address'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date of Inspection',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'DateofInspec'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Vehicle Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'VehicleNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Year of Manufacture',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'YearMfg'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Model Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Model'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Engine Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'EngineNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Chasis Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'ChasisNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'ChasisCon'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'EngineCon'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Chasis1'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Body Condition of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'BodyCon'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Tyre Condition of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'TyresCon'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Over all Condition of Vehicle',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'OverallCon'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'PolicyNumber'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Policy Expiry Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'PlcyExpDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sum of Insured',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'SumInsured'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Expected Market Value',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'ExpMarketValue'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'MarkValCond'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'MarkValExCond'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Remarks',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Remarks'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Verification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'VerifyBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Lstmodby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Lstmoddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Apprvdby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Approved Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'Apprvddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'RC Copy',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'RCCopy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Wheels',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'NoOfWheels'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'AvgRepCycle'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'LastRepDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Number of Tyres Replaced',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'NoOfTyresreplaced'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Brand Name of Tyre',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'TyreBrand'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'CostOfPurchase'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'NextRepDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Tax paid Till',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'TaxPaidTill'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Tax Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'TaxAmount'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'TaxCycle'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'PermitRenewTill'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'PermitRenewAmount'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'PermitCycle'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'MaintananceCycle'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'LastServRepairDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'ServRepairCost'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'NextServRepairDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Vehicle Inspection Print',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_VehicleInspection',
+@level2type=N'COLUMN',@level2name=N'VInspectionPrint'
+GO
