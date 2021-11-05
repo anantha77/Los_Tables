@@ -1,0 +1,85 @@
+
+--Los_CustomerReferral
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table that Keeps the record of Customer referral',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Customer Referral',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Customer Code',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'custcode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Customer Mobile Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'CustMobileNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Customer Referral Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'CustReferralCode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N' Verifies the Customer Utilized Code',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'CustUtilizedFlag'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Customer Company Code',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'CustCompanyCode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'CrtdDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'CrtdBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'LstModDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerReferral',
+@level2type=N'COLUMN',@level2name=N'LstModBy'
+GO

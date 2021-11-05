@@ -1,0 +1,182 @@
+--Los_CustomerGSTdetails
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table that Keeps the record of Customer GST Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Primary Key for Customer GST Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'State Code of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'StateCode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'GST Number of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'GSTNumber'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Category of GST',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'GSTCategory'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Provisional GST ID',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'ProvisionalGSTID'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Name of Contacted Person',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'ContactPersonName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Designation of Contacted Person',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'ContactPersonDesignation'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'TANNumber'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'House Number of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Hno'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Street Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Street'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Locality of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Locality'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Pincode',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Pincode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'City Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'City'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Taluk of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Taluk'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'State of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'State'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Country Name of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Country'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Location Landmark',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Landmark'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Crtdby'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'crtddt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Order Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'OrderNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Status of Application',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'Status'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Status of GST Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'GSTVerify'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Type of Registration',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'RegistrationType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'COLUMN_Msg',@value=N'Date of Registration',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_CustomerGSTdetails',
+@level2type=N'COLUMN',@level2name=N'RegistrationDate'
+GO

@@ -1,0 +1,140 @@
+--Los_TeleVerification
+
+Exec sp_addextendedproperty 
+@name=N'Table_Msg',@value=N'Table Keeps the record of Tele Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Tele Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'Pk_id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Customer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'CustomerType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Guarantor ID',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'GuarantorID'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'CoApplicant',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'CoApplicant'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of the Person Spoken',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'NameOfThePersonSpokenTo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Relation with Applicant',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'RelationWithApplicant'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Customer Availability',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'CustAvailability'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Outcome',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'OutCome'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Reference Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'RefVerified'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Verify result',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'VerifyResult'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date of  Verification',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'VerifyDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Verified Time',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'VerifyTime'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Remarks of Applicant',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'ApplicantRemarks'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Remarks',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'Remarks'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'CrtdBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Application Created Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'CrtdDt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modification Done By',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'LstmodBy'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Last Modified Date',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'Los_TeleVerification',
+@level2type=N'COLUMN',@level2name=N'LstmodDt'
+GO
