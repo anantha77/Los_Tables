@@ -1,0 +1,142 @@
+-- Los_PropertyDetails
+
+
+exec sp_addextendedproperty 
+@value=N'Table_msg',@name=N' table keeps the record of property details',
+@level0type=N'schema',@level0name=N'dbo',  
+@level1type=N'table',@level1name=N'los_propertyDetails'
+GO
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Primary Key for property Details',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'pk_id'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Sanction Number',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'SancNo'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Name of Seller',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'NameOfSeller'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Name of Project',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'NameOfProject'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Usage of Property',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'UsageOfProperty'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'House Name',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'HouseName'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Name of Street',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'StreetName'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Locality',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'Locality'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Pincode',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'PinCode'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'City Name',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'City'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Taluk District',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'TalukDistrict'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'State Name',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'State'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Country',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'Country'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Location Landmark',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'Landmark1'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Order Number',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'OrderNo'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Application Created Date',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'CrtdDt'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Application Created By',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'CrtdBy'
+Go    
+
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Application Last Modified Date',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'LstModDt'
+Go    
+
+exec sp_addextendedproperty 
+@value=N'Column_msg',@name=N'Application Last Modification Done By',
+@level0type=N'schema',@level0name=N'dbo', 
+@level1type=N'table',@level1name=N'Los_propertyDetails',
+@level2type=N'column',@level2name=N'LstModBy'
+Go    

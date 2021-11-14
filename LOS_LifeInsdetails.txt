@@ -1,0 +1,245 @@
+-- LOS_LifeInsdetails
+
+
+Exec sp_addextendedproperty @name=N'Table_Msg',@value=N'Table Keeps the record about Life Insurance Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Primary Key for Life Insurance Details',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'PK_Id'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Sanction Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'SancNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Insurer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Insurer'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Customer/Guarantor Flag', --E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'CustGuarantorFlag'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'CustGuarantorPk_ID'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Coverage Amount for Insurance',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Coverage_Amt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Coverage Tenure for Insurance',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Coverage_tenure'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Nominee',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'NomineeName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date of Birth',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'DOB'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Age of Nominee',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Age'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Relationship of Nominee with Insurer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Relationship'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'House Name/Number',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'HouseName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Street',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'StreetName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Locality',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Locality'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Pincode',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Pincode'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'City Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'City'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Taluk',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'TalukDistrict'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'State Name',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'State'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Country',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Country'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Location Landmark',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Landmark1'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Mobile Number of Nominee',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'MobileNo'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Premium Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Premium_Amt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'GST',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'GST'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Total Premium Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Total_Premium_Amt'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Type of Policy',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'PolicyType'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Medical Test',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'MedicalTest'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'',--E
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'DOGH'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Medical Test Appeared',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'MedicalTestAppeared'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Date of Medical Test',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'MedicalTestDate'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Result of Medical Test',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'MedicalTestResult'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Name of Doctor',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'DoctorName'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Gender of Insurer',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'InsurerGender'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Status of Medical Test Applicable',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'Medicaltstapplicable'
+GO
+
+Exec sp_addextendedproperty 
+@name=N'Column_Msg',@value=N'Medical Coverage Amount',
+@level0type=N'SCHEMA',@level0name=N'dbo',
+@level1type=N'TABLE',@level1name=N'LOS_LifeInsdetails',
+@level2type=N'COLUMN',@level2name=N'MedicalCoverageAmnt'
+GO
